@@ -1,0 +1,60 @@
+#randomdish {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65vh;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 5px solid #A27B5C;
+    
+    .img-block {
+        height: 320px;
+        width: 320px;
+        border-radius: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .description {
+        width: 65%;
+        position: relative;
+
+        p {
+            overflow-wrap: break-word;
+            font-size: 17px;
+            line-height: 26px;
+            padding: 20px 0;
+        }
+
+        h2 {
+            display: flex;
+            color: #3F4E4F;
+            font-size: 32px;
+            font-weight: 600;
+            letter-spacing: .1rem;
+        }
+    }
+
+    .btn-group {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 400px;
+
+        button,
+        .details-btn {
+            color: #222;
+            position: relative;
+            border: 1px solid #222;
+            margin: 0 14px 0 0;
+            
+            &:hover {
+                background-color: #222;
+                color: #A27B5C;
+                cursor: pointer;
+            }
+        }
+        
+    }
+}

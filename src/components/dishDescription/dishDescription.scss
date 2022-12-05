@@ -1,0 +1,121 @@
+#dish-descr {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 40%;
+    margin-left: 20px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    height: 100%;
+
+    .base-info {
+        width: 100%;
+
+        .img-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            box-shadow: inset rgba(50, 50, 93, 0.3) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            text-align: center;
+            height: 220px;
+            font-size: 20px;
+            color: #fff;
+
+        }
+
+        .info-box {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-direction: column;
+            color: #333;
+            background-color: #fff;
+            padding: 20px 40px;
+
+            h3 {
+                padding: 12px 0;
+            }
+
+            ol {
+                width: 100%;
+                list-style: none;
+
+                li {
+                    line-height: 1.7;
+                    margin: 8px 0;
+                    padding: 5px 12px;
+                    background-color: rgba($color: #000, $alpha: 0.1);
+                    color: #333;
+                    width: 100%;
+                    border-radius: 18px;
+                }
+            }
+
+            .btn-group {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 10px;
+            }
+
+            .details-btn,
+            .cart-btn {
+                color: #333;
+                position: relative;
+                border: 1px solid #333;
+
+                i {
+                    font-size: 12px;
+                    padding-right: 6px;
+                }
+
+                &:hover {
+                    background-color: #333;
+                    color: #A27B5C;
+                    cursor: pointer;
+                }
+            }
+
+
+
+            .counter {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding: 12px 12px;
+                width: 105px;
+                color: #fff;
+                background-color: #2C3639;
+                border-radius: 36px;
+                font-size: 16px;
+
+                .inc,
+                .dec {
+                    font-size: 18px;
+                    color: #A27B5C;
+                    transition: 0.3s ease-out;
+                    border: none;
+                    background-color: transparent;
+
+                    &:hover {
+                        cursor: pointer;
+                        transform: translateY(-0.05rem);
+                        color: #DCD7C9;
+                    }
+                }
+            
+            }
+        }
+
+
+    }
+}
+
+
+
+

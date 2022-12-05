@@ -1,0 +1,191 @@
+.box-p0 {
+    padding: 40px 40px;
+}
+
+.box-p1 {
+    padding: 30px 20px;
+}
+
+#cart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 40px;
+
+    .items {
+        list-style: none;
+    }
+    
+    .cartlist {
+        position: relative;
+        background-color: #f2f2f2;
+        width: 75%;
+        margin-right: 16px;
+        height: 100%;
+        border-radius: 8px;
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 20px;
+
+            h2 {
+                font-weight: 400;
+            }
+
+            input {
+                height: 40px;
+                width: 270px;
+                border: none;
+                background-color: rgb(133, 133, 133);
+                color: #fff;
+                font-weight: 600;
+                padding: 0 16px;
+                border-radius: 8px;
+                transition: 0.25s ease;
+
+                &:focus {
+                    outline: none;
+                }
+
+                &::placeholder {
+                    color: #2C3639;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
+    .order {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #fff;
+        height: 520px;
+        border-radius: 8px;  
+
+        span {
+            color: rgba($color: #333, $alpha: 0.3);
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid rgba($color: #333, $alpha: 0.2);
+        }
+
+        h4 {
+            font-weight: 500;
+            color: rgba($color: #222, $alpha: 0.6);
+        }
+
+        .switch-field {
+            display: flex;
+            overflow: hidden;
+            background-color: #e4e4e4;
+            border-radius: 5px;
+            padding: 3px;
+            width: 67%;
+            border: 0.4px solid rgba($color: #333, $alpha: 0.1);
+        }
+
+        .switch-field input {
+            position: absolute !important;
+            clip: rect(0, 0, 0, 0);
+            height: 1px;
+            width: 1px;
+            border: 0;
+            overflow: hidden;
+        }
+
+        .switch-field label {
+            color: rgba(0, 0, 0, 0.6);
+            font-size: 15px;
+            line-height: 1;
+            text-align: center;
+            padding: 8px 16px;
+            margin-right: -1px;
+            transition: all 0.1s ease-in-out;
+        }
+
+        .switch-field label:hover {
+            cursor: pointer;
+        }
+
+        .switch-field input:checked + label {
+            background-color: #fff;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            font-weight: 600;
+        }
+
+        .switch-field label {
+            border-radius: 5px;
+        }
+
+        .promocode {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            position: relative;
+
+            input {
+                width: 85%;
+
+                padding: 8px 10px;
+                border: 0.5px solid rgba($color: #333, $alpha: 0.2);
+                border-right: none;
+                border-top-left-radius: 8px;
+                border-bottom-left-radius: 8px;
+            }
+
+            button {
+                width: 20%;
+                position: absolute;
+                right: 0;
+                padding: 9px 12px;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 6px;
+                border: 0.1px solid rgba($color: #333, $alpha: 0.1);
+                background-color: #fff;
+                border-radius: 8px;
+                transform: 0.3s ease;
+
+                &:hover {
+                    cursor: pointer;
+                    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+                }
+            }
+
+        }
+
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+
+            button {
+                margin: 3px 0;
+                padding: 8px 0;
+                border: none;
+                background-color: transparent;
+                font-weight: 500;
+                border-radius: 8px;
+
+                &:first-of-type {
+                    background: #B73E3E;
+                    color: #fff;
+                }
+
+                &:last-of-type {
+                    border: 1px solid rgba($color: #333, $alpha: 0.2);
+                }
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

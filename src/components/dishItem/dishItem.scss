@@ -1,0 +1,57 @@
+
+    .dish-item {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        width: 100%;
+        padding: 18px 10px 3px 10px;
+        transition: 0.2s ease-in;
+        color: #DCD7C9;
+        border-bottom: 1.5px solid #DCD7C9;
+
+        &:hover, 
+        &.selected {
+            cursor: pointer;
+            border-bottom: 1.5px solid rgba($color: #DCD7C9, $alpha: 0.6);
+            color: rgba($color: #DCD7C9, $alpha: 0.6);
+        }
+        
+        &-enter {
+            opacity: 0;
+        }
+
+        &-enter-active {
+            opacity: 1;
+            transition: opacity 500ms ease-in;
+        }
+
+        &-exit {
+            opacity: 1;
+        }
+
+        &-exit-active {
+            opacity: 0;
+            transition: opacity 500ms ease-in;
+        }
+
+        img {
+            position: absolute;
+            object-fit: cover;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            width: 240px;
+            height: 240px;
+            top: -10px;
+            right: 15%;
+            z-index: 2;
+        }
+
+        .dish-name {
+            width: 80%;
+            padding: 8px 0;
+            transition: 0.5s ease;
+            font-size: 20px;
+        }
+
+    }
