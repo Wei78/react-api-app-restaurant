@@ -7,13 +7,13 @@
     padding: 0 40px;
 
     #navlist {
+        width: 20%;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         list-style: none;
 
         li {
-            padding: 0 22px 0 0;
             .navlink {
                 position: relative;
                 text-decoration: none;
@@ -46,6 +46,26 @@
                 }
 
             }
+                button {
+                    background-color: transparent;
+                    border: none;
+                    span {
+                        color: #fff;
+                        font-weight: 500;
+                        font-size: 16px;
+                        background: -webkit-linear-gradient(#fff, #333);
+                        background-clip: text;
+                        -webkit-text-fill-color: transparent;
+
+                        &:hover {
+                            cursor: pointer;
+                            background: -webkit-linear-gradient(#333, #fff);
+                            background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            
+                        }
+                    }
+                }
         }
     }
 }

@@ -36,7 +36,7 @@ const DishDescription = (props) => {
     const skeleton = dish || loading || error ? null : "";
     const errorMessage = error ? <ErrorMessage/> : null;
     const spinner = loading ? <Spinner/> : null;
-    const content = !(loading || error || !dish) ? <View dish={dish} onUpdateDish={updateDish}/> : null;
+    const content = !(loading || error || !dish) ? <View dish={dish} onUpdateDish={updateDish}/> : <h3>Choose dish from menu to see price and description</h3>;
 
     return (
         <section id='dish-descr'>

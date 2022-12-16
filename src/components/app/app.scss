@@ -10,6 +10,7 @@
 
 body {
     background: #000;
+    transition: 1s ease;
 }
 
 main {
@@ -37,4 +38,36 @@ main {
     padding: 12px 28px;
     text-decoration: none;
     transition: 0.3s ease;
+}
+
+.white-content {
+  background: #fff; 
+  transition: 1s ease;
+
+  #navbar {
+    #navlist {
+        li {
+            .navlink {
+                color: #000;
+                &:hover {
+                    color: #DCD7C9;
+                }
+                
+                &.active {
+                    color: #A27B5C;
+                }
+            }
+        }
+    }
+  }
+
+
+    #additional{
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;    
+    }
+
+    #main-box {
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    }
+  
 }
